@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sensic - Crypto Fraud Detector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="icon128.png" alt="Logo">
+        </div>
+        <div class="website-link">
+            <a href="https://sensic.netlify.app/" target="_blank">Visit Our Website</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Sensic - Crypto Fraud Detector</h1>
+        <h3>Sensic uses advanced machine learning algorithms to detect crypto fraud</h3>
+        <div class="input-container">
+            <input type="text" id="address" placeholder="ETH Address or URL Link" />
+            <button id="convert" class="convert-button">Scan</button>
+            <div class="loading-spinner"></div>
+        </div>
+
+
+    <h2 class="title1">Analysis Result</h2>
+
+    <div class="result-box">
+        <h4 id="addressorurl" class="result"></h4>
+        <h2 id="result" class="result"></h2>
+        <p id="para" class="result"></p>
+        <div class="containerbar">
+            <div class="circular-progress">
+                <span id="percentage" class="progress-value"></span>
+            </div>
+            <span id="metric5" class="text"></span>
+        </div>
+
+        
+    </div>
+
+    <h2 class="title2">Other Metric</h2>
+
+    <div class="metric-box">
+            <div class="metric-item">
+                <h4>Ether Balance: </h4>
+                <br>
+                <p id="metric1" class="metric"></p>
+            </div>
+            <div class="metric-item">
+                <h4>Total number of normal transactions: </h4>
+                <p id="metric2" class="metric"></p>
+            </div>
+            <div class="metric-item">
+                <h4>The first transaction was made at: </h4>
+                <p id="metric3" class="metric"></p>
+            </div>
+            <div class="metric-item">
+                <h4>The last transaction was made at: </h4>
+                <p id="metric4" class="metric"></p>
+            </div>
+            <div class="hide">
+            <span>Date format: YYYY-MM-DD</span>
+            </div>
+    </div>
+
+    <div class="error-box">
+        <h2 id="error">Extraction Failed</h2>
+        <p>An error has occurred in extracting data from the API or the data was inputted incorrectly</p>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="fear-greed-index">
+            <p id="fear-greed-value" class="fear-greed-value"></p>
+            <p id="fear-greed-class" class="fear-greed-value"></p>
+        </div>
+    </footer>
+
+    <script src="content.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+*
+body {
+    font-family: sans-serif;
+    background-color: #0c0c0c;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0c0c0c;
+}
+
+.error-box {
+    display: none;
+    background: linear-gradient(to bottom, #111111, #161616);
+    border-radius: 10px;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px; /* Added margin-bottom */
+    
+}
+
+.error-box h2 {
+    color: #c92424;
+    font-size: 25px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+.error-box p {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.result-box {
+    display: none;
+    background: linear-gradient(to bottom, #111111, #161616);
+    border-radius: 10px;
+    padding: 25px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Added margin-bottom */
+    
+}
+
+.result-box p {
+    margin-bottom: 10px;
+}
+
+.result-box h4 {
+    color: #5c5c5c;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.result-box h2 {
+    color: #c92424;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.result-box p {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.metric-box  {
+    background: linear-gradient(to bottom, #111111, #161616);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+    padding-bottom: 7px;
+}
+
+.metric-item {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.metric-box .metric-item h4{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.metric-box .metric-item p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #66df66;
+}
+
+.hide {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1 / span 2; /* Add this line */
+    padding-bottom: 10px;  
+}
+
+.title1{
+    display: none;
+}
+
+.title2{
+    display: none;
+}
+
+.metric-item p {
+    margin: 0;
+}
+
+  
+.metric-box p {
+    margin-bottom: 10px;
+}
+
+.containerbar {
+    display: flex;
+    width: 330px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    row-gap: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: conic-gradient(#c92424 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #161616;
+}
+
+.progress-value{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #c92424;
+}
+
+.text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #66df66;
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    color: #f2f2f2;
+    margin-bottom: 10px; /* Updated line */
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+
+}
+
+h3 {
+    text-align: left;
+    color: #f2f2f2;
+    font-weight: 500;
+    margin-top: 0; /* Updated line */
+    margin-bottom: 25px; /* Updated line */
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+     
+}
+
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px 0 0 5px;
+    color: #f2f2f2;
+    background-color: #0c0c0c;
+    outline: none; /* Added line to remove the additional border */
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #66df66;
+    border: 1px solid #cccccc;
+    color: #000000;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 10px 20px; /* Adjust the padding to make the button smaller if needed */
+    flex-shrink: 0; /* Prevent the button from growing when the div loading-spinner is loaded */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out
+}
+
+button:hover {
+    background-color: #51d151;
+}
+
+
+.convert-button {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the child elements vertically */
+}
+
+.loading-spinner {
+    display: none; 
+    height: 25px;
+    width: 25px;
+    border: 4px solid;
+    border-color: #0c0c0c transparent #0c0c0c transparent;
+    border-radius: 50%;
+    animation: spin 1.3s linear infinite;
+    margin-right: 5px; /* Add this line to create space between the spinner and the text */
+}
+
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    background-color: #0c0c0c;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 31.25px;
+    padding: 7px;
+}
+
+.header .website-link a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 13px;
+    transition: color 0.2s ease-in-out;
+}
+
+.header .website-link a:hover {
+    text-decoration: none;
+    color: #66df66;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+.footer .social-media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer .social-media-icons img {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+    filter: invert(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer .social-media-icons img:hover{
+    transform: translateY(-5px);
+}
+
+#fear-greed {
+    text-align: center;
+    background-color: #0c0c0c;
+    padding: 2px;
+}
+
+.fear-greed-value {
+    font-size: 14px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+.fear-greed-value,
+.fear-greed-class {
+    line-height: 0.50; /* Set line-height to 1 to reduce spacing */
+}
+
