@@ -1,5 +1,3 @@
-# Fraud-Detector-Extension
-
 # Overview
 
 As an associate at the Youth Policy Forum in Dhaka, Bangladesh, I had the unique opportunity to delve into the world of blockchain and cryptocurrency technology. My role involved extensive research and collaboration with lawmakers, exploring the potential integration of these innovative technologies into Bangladesh's financial landscape.
