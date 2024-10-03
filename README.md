@@ -9,9 +9,9 @@ That's where this Ethereum Fraud Detector Extension comes in. This project aims 
 ## Accuracy Scores
 
 <pre>
-Name              Class-Score       Overall-Score
-Random Forest     0.76667           0.89286
-LinearSVC         0.66667           0.70677
+Name              Accuracy-Score      
+Random Forest     0.89286           
+LinearSVC         0.70677           
 </pre>
 
 ## Links
