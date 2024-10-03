@@ -1,4 +1,4 @@
-# Ethereum-Fraud-Detector-Extension
+# Fraud-Detector-Extension
 
 # Overview
 
@@ -16,4 +16,6 @@ Random Forest     0.76667           0.89001
 LinearSVC         0.66667           0.70677
 </pre>
 
+### Reference
 
+Haghighi, S., & Ramezani, F. (2022). Ethereum Fraud Detection Models (Version 1.0) [Computer software]. https://github.com/sepandhaghighi/Ethereum-Fraud-Detection-Models
