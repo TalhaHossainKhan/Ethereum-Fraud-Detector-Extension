@@ -16,6 +16,11 @@ Random Forest     0.76667           0.89001
 LinearSVC         0.66667           0.70677
 </pre>
 
+## Links
+
+[Website](https://sensic.netlify.app/)
+[Chrome Extension](https://chromewebstore.google.com/detail/sensic-crypto-fraud-detec/gnafhlgdcamabbeopmcekpfdfhbpeelp)
+
 ### Reference
 
 Haghighi, S., & Ramezani, F. (2022). Ethereum Fraud Detection Models (Version 1.0) [Computer software]. https://github.com/sepandhaghighi/Ethereum-Fraud-Detection-Models
